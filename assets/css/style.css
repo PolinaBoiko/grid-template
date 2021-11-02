@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #637588;
+  overflow-y: scroll;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: red;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  height: 60px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 0.5s;
+}
+
+.btn:hover {
+  background-color: #d66926;
+}
+
+.header {
+  position: relative;
+  background-color: #2d3651;
+  color: #ffffff;
+  min-height: 100vh;
+  background-image: url(../img/img-header.png);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  display: grid;
+  align-content: center;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header-content__container,
+.header-menu__container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content__actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-content__title {
+  margin: 0 0 51px 0;
+}
+
+.header-menu {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header-menu__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.22em;
+}
+
+.header-logo__link {
+  padding: 20px 20px 20px 0;
+  display: block;
+}
+
+.header-logo__accent {
+  display: inline-block;
+  border: 3px solid #d53d27;
+  padding: 14px 1px 13px 5px;
+  margin-right: 4px;
+}
+
+.header-navbar__btn {
+  display: none;
+}
+
+.header-navbar__list {
+  list-style: none;
+  margin: 0 -10px 0 0;
+  padding: 0;
+  display: grid;
+  justify-content: end;
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  gap: 20px;
+}
+
+.header-navbar__item {}
+
+.header-navbar__link {
+  display: block;
+  padding: 20px 10px;
+  transition: color 0.5s;
+  font-size: 1.125rem;
+}
+
+.header-navbar__link:hover {
+  color: #d66926;
+}
+
+.header-overlay {
+  background-color: #2d3651;
+  opacity: 0.8;
+  position: absolute;
+  inset: 0
+}
